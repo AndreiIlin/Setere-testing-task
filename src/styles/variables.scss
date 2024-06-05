@@ -1,0 +1,32 @@
+@import "breakpoints";
+@import "media-queries";
+
+/* Fonts */
+
+$font-family: 'Inter', sans-serif;
+$fw-normal: 400;
+$fw-bold: 700;
+$fw-extra-bold: 800;
+
+/* Colors */
+
+$color-main: #AAAAAA;
+$color-secondary: #064087;
+$color-dark: #000000;
+$color-white: #ffffff;
+$color-orange: #EA5F0A;
+
+$color-breadcrumbs: #575757;
+$color-toggle-border: #F1F1F1;
+$color-toggle-text: #717171;
+$color-toggle-text-active: #3C3C3C;
+$color-bg-secondary: #EDEDED;
+
+$color-option: #878787;
+$color-option-hover: #f7f7f7;
+
+/* Shadows */
+
+$shadow-header: 0px 15px 20px 0px #0000000D;
+$shadow-card: 0px 15px 20px 0px #0000000D;
+

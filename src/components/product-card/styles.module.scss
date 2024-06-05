@@ -1,0 +1,116 @@
+.card {
+  width: 100%;
+  box-shadow: $shadow-card;
+  border-radius: 10px;
+
+  @include laptop-v-view {
+    width: calc(50% - 13px);
+  }
+
+  @include desktop-extra-view {
+    width: 305px;
+  }
+}
+
+.image {
+  width: 100%;
+
+  &-layout {
+    width: 100%;
+    height: 205px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  &-additional {
+    position: absolute;
+    top: 25px;
+    right: 12px;
+  }
+}
+
+.content {
+  padding: 20px 12px 39px 20px;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 29.05px;
+  font-weight: $fw-bold;
+  color: $color-dark;
+}
+
+.description {
+  margin-top: 10px;
+  max-width: 250px;
+}
+
+
+.footer {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 24px;
+  line-height: 29.05px;
+  font-weight: $fw-extra-bold;
+  color: $color-dark;
+}
+
+.button {
+  padding: 17px 39px;
+
+  font-size: 18px;
+  line-height: 21.78px;
+  font-weight: $fw-extra-bold;
+
+  border-radius: 81px;
+  color: $color-white;
+  background-color: $color-orange;
+  border: none;
+}
+
+.toggle {
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+  background-color: $color-white;
+  border-radius: 81px;
+  border: 2px solid $color-toggle-border;
+
+  &-input {
+    display: none;
+
+    &:checked + .toggle-label {
+      color: $color-dark
+    }
+  }
+
+  &-label {
+    position: relative;
+    flex: 1 0 auto;
+    padding: 15px 30px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    color: $color-toggle-text;
+    line-height: 19.36px;
+    z-index: 1;
+  }
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 100%;
+  background-color: $color-bg-secondary;
+  border-radius: 25px;
+  transition: left 0.3s ease;
+}

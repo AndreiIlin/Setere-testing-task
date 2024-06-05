@@ -1,0 +1,62 @@
+.main {
+  padding: 20px 0;
+
+  @include laptop-v-view {
+    padding: 78px 20px;
+  }
+
+  @include desktop-view {
+    padding: 78px 60px;
+  }
+
+  @include desktop-extra-view {
+    padding: 78px 95px 94px 79px;
+  }
+}
+
+.crumbs {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 13px;
+  font-size: 14px;
+  line-height: 16.94px;
+  color: $color-breadcrumbs;
+}
+
+.crumb {
+  position: relative;
+
+  &:not(:last-child):after {
+    content: '/';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -9px;
+  }
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 54px;
+  font-weight: $fw-extra-bold;
+  line-height: 64.8px;
+  color: $color-secondary;
+}
+
+.cards {
+  margin-top: 30px;
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @include laptop-v-view {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 26px;
+  }
+
+  @include desktop-extra-view {
+    flex-wrap: nowrap;
+  }
+}

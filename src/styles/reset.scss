@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $font-family;
+  font-weight: $fw-normal;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: $color-main;
+}
+
+button {
+  font-family: $font-family;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

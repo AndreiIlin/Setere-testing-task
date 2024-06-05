@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  position: relative;
+  padding: 32px 0 28.73px;
+
+  box-shadow: $shadow-header;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.logo {
+  display: none;
+
+  @include laptop-v-view {
+    padding: 17px 79px 18.27px 71px;
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: $fw-bold;
+    color: $color-white;
+
+    border-radius: 6px;
+    background-color: $color-secondary;
+  }
+}
+
+.addition {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @include laptop-v-view {
+    width: auto;
+    justify-content: flex-start;
+    column-gap: 33px;
+  }
+}
+
+.link {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: $fw-bold;
+  color: $color-secondary;
+
+  &-rest {
+    margin-top: 1px;
+    margin-left: 4px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.icon {
+  color: $color-white;
+  cursor: pointer;
+
+  &-wrapper {
+    padding: 1px 10px 5px 5px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -32px;
+      left: -8.5px;
+      width: 64px;
+      height: 95px;
+      border-radius: 0 0 6.95px 6.95px;
+      background-color: $color-secondary;
+      z-index: -1;
+    }
+  }
+}

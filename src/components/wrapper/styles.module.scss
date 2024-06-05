@@ -1,0 +1,18 @@
+.wrapper {
+  padding: 0 16px;
+  width: 100%;
+
+  @include laptop-v-view {
+    padding: 0 39px;
+  }
+
+  @include laptop-h-view {
+    padding: 0 31px;
+  }
+
+  @include desktop-extra-view {
+    max-width: 1446px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
